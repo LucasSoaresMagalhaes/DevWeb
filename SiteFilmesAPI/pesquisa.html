@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/6975c4d52f.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://api.themoviedb.org/3/movie/550?api_key=4c7b64cb66dc7ea81ad474109e62ba56">
+    <title>Pesquisa</title>
+</head>
+
+<body>
+    <input type="checkbox" id="menuToggle">
+    <label for="menuToggle" class="menu-icon">
+        <i class="fa-solid fa-bars"></i>
+        <i class="fa-solid fa-x"></i>
+    </label>
+    <nav>
+        <a href="index.html">
+            <img src="/imagens/Logo.png" alt="Logo">
+        </a>
+
+        <div class="pesquisa">
+            <div class="input-group">
+                <button class="btn" type="button" onclick="runSearch(document.getElementById('pesquisa').value)">
+                    <i class="fas fa-search"></i> </svg>
+                </button>
+                <input type="text" id="pesquisa" class="form-control" placeholder="Pesquisar filme">
+                <button class="btn" type="button">
+                    <i class="fa fa-times-circle-o" aria-hidden="true"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <content>
+        <div id="pesquisar">
+            <div class="row">
+                <h1 id="destaque" class="titulo"><b>Pesquisa:</b></h1>
+                <div class="col-lg-6">
+                    <a href="" id="homepage">
+                        <img src="/imagens/Cartaz 1.png" id="poster" width="100%"></a>
+                </div>
+                <div class="col-lg-6">
+                    <h1 class="titulo"><b id="titulofilme">TITULO DO FILME AQUI</b></h1>
+                    <h2><b>Sinopse:</b><span id="resumopesquisa"> Nathan Drake
+                            e seu parceiro
+                            canastrão Victor "Sully" Sullivan embarcam em uma perigosa busca para encontrar
+                            o maior tesouro jamais encontrado. Enquanto isso, eles também rastreiam pistas
+                            que podem levar ao irmão perdido de Nathan.</span></h2>
+                    <h2><b>Nota:</b><span id="notapesquisa">999</span></h2>
+                    <h2><b>Popularidade: </b><span id="popularidade">999999999999999</span></h2>
+                    <h2><b>Lançamento: </b><span id="lancamento">999999999999999</span></h2>
+                    <h2><b>Orçamento: </b><span id="orcamento">999999999999999</span></h2>
+                    <h2><b>Titulo original: </b><span id="tituloring">999999999999999</span></h2>
+                    <h2><b>Linguagem original: </b><span id="leanguagem">999999999999999</span></h2>
+                    <h2><b>Gêneros: </b>
+                        <ul id="generos"></ul>
+                    </h2>
+
+                </div>
+
+
+            </div>
+        </div>
+        <footer>
+            <div class="rodape">
+                <p>Copyright 2022 - Disciplina de Desenvolvimento de Interfaces Web - <b>IEC PUC Minas</p>
+                <img src="/imagens/Logo.png" alt="Logo">
+            </div>
+        </footer>
+    </content>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+    <script src="metodos.js"></script>
+</body>
+
+
+
+</html>

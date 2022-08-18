@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/6975c4d52f.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://api.themoviedb.org/3/movie/550?api_key=4c7b64cb66dc7ea81ad474109e62ba56">
+    <title>Filmologia</title>
+</head>
+
+<body>
+    <input type="checkbox" id="menuToggle">
+    <label for="menuToggle" class="menu-icon">
+        <i class="fa-solid fa-bars"></i>
+        <i class="fa-solid fa-x"></i>
+    </label>
+    
+    <nav>
+        <a href="index.html">
+        <img src="/imagens/Logo.png" alt="Logo">
+    </a>
+        <div class="pesquisa">
+            <div id="OBOTAO" class="d-grid gap-2">
+                <a class="btn btn-primary" href="pesquisa.html" role="button">Pesquisar</a>              
+            </div>
+        </div>
+        
+    </nav>
+    <p id="titulo">Lançamentos</p>
+    <header>
+        <div class="col-lg-12">
+            <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                        aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <iframe width="50%" height="600" id="videon1" src="https://www.youtube.com/embed/5aAy17pCKb4"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
+                        <div class="carousel-caption d-none d-md-block">
+                            <div class="conteudoL">
+                                <h1 class="titulo"><b id="pnovidade1">Uncharted: Fora do Mapa</b></h1>
+                                <h2 class="titulo"><b>Sinopse:</b><span class="texto" id="resumenovidade1"> Nathan Drake
+                                        e seu parceiro
+                                        canastrão Victor "Sully" Sullivan embarcam em uma perigosa busca para encontrar
+                                        o maior tesouro jamais encontrado. Enquanto isso, eles também rastreiam pistas
+                                        que podem levar ao irmão perdido de Nathan.</span></h2>
+
+                                <h3 class="titulo"><b>Nota média:</b><span id="notan1" class="texto">Ruben
+                                        Fleischer</span></h3>
+                                <h4 class="titulo"><b>Título original:</b> <span id="origintn1" class="texto">Amy
+                                        Hennig</span></h4>
+                                <h5 class="titulo"><b>Estreia:</b> <span id="estreian1" class="texto">2022</span></h5>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <iframe width="50%" height="600" id="videon2" src="https://www.youtube.com/embed/56pvThSsoSE"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
+                        <div class="carousel-caption d-none d-md-block">
+                            <div class="conteudoL">
+                                <h1 class="titulo"><b id="pnovidade2">John Wick 4</b></h1>
+                                <h2 class="titulo"><b>Sinopse:</b><span class="texto" id="resumenovidade2"> John Wick:
+                                        Capítulo 4 é um
+                                        próximo filme de suspense de ação neo-noir americano que está servindo como a
+                                        sequência direta de John Wick: Capítulo 3 – Parabellum de 2019, bem como a
+                                        quarta parte da série de filmes John Wick. </span></h2>
+
+                                <h3 class="titulo"><b>Nota média:</b><span id="notan2" class="texto">Ruben
+                                        Fleischer</span></h3>
+                                <h4 class="titulo"><b>Título original:</b> <span id="origintn2" class="texto">Amy
+                                        Hennig</span></h4>
+                                <h5 class="titulo"><b>Estreia:</b> <span id="estreian2" class="texto">2022</span></h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <iframe width="50%" height="600" id="videon3" src="https://www.youtube.com/embed/KVtPzLfNi_A"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
+                        <div class="carousel-caption d-none d-md-block">
+                            <div class="conteudoL">
+                                <h1 class="titulo"><b id="pnovidade3">Lightyear</b></h1>
+                                <h2 class="titulo"><b>Sinopse:</b><span class="texto" id="resumenovidade3"> Lightyear é
+                                        uma futura animação
+                                        americana de ficção científica de ação produzido pela Pixar Animation Studios e
+                                        Walt Disney Pictures. </span></h2>
+                                <h3 class="titulo"><b>Nota média:</b><span id="notan3" class="texto">Ruben
+                                        Fleischer</span></h3>
+                                <h4 class="titulo"><b>Título original:</b> <span id="origintn3" class="texto">Amy
+                                        Hennig</span></h4>
+                                <h5 class="titulo"><b>Estreia:</b> <span id="estreian3" class="texto">2022</span></h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+        </div>
+    </header>
+    <content>
+        <div class="destaque">
+            <p id="destaque" class="titulo">Em destaque</p>
+            <div class="maisF">
+                <button type="button" onclick="mostrarmais()" class="btn btn-secondary btn-sm" id="fiquenadireita"><b>+</b> Carregar mais
+                    filmes</button>
+            </div>
+            <div class="container">
+                <a href="" id="linkcartaz1">
+                <img id="cartaz1" src="/imagens/Cartaz 1.png" alt="Cartaz1">
+            </a><a href="" id="linkcartaz2">
+                <img id="cartaz2" src="/imagens/Cartaz 1.png" alt="Cartaz2">
+            </a><a href="" id="linkcartaz3">
+                <img id="cartaz3" src="/imagens/Cartaz 1.png" alt="Cartaz3">
+            </a><a href="" id="linkcartaz4">
+                <img id="cartaz4" src="/imagens/Cartaz 1.png" alt="Cartaz4">
+            </a><a href="" id="linkcartaz5">
+                <img id="cartaz5" src="/imagens/Cartaz 1.png" alt="Cartaz5">
+            </a><a href="" id="linkcartaz6">
+                <img id="cartaz6" src="/imagens/Cartaz 1.png" alt="Cartaz6">
+            </a><a href="" id="inkcartaz7">
+                <img id="cartaz7" src="/imagens/Cartaz 1.png" alt="Cartaz7">
+            </a><a href="" id="linkcartaz8">
+                <img id="cartaz8" src="/imagens/Cartaz 1.png" alt="Cartaz8">
+            </a><a href="" id="linkcartaz9">
+                <img id="cartaz9" src="/imagens/Cartaz 1.png" alt="Cartaz9">
+            </a><a href="" id="linkcartaz10">
+                <img id="cartaz10" src="/imagens/Cartaz 1.png" alt="Cartaz10">
+            </a><a href="" id="linkcartaz11">
+                <img id="cartaz11" src="/imagens/Cartaz 1.png" alt="Cartaz11">
+            </a><a href="" id="linkcartaz12">
+                <img id="cartaz12" src="/imagens/Cartaz 1.png" alt="Cartaz12">
+            </a>
+            </div>
+        </div>
+
+
+
+        </div>
+        <p id="innertitulo" class="makingoff">Entrevistas & Making of</p>
+
+        <div class="entrevistas">
+
+            <div class="entrevista">
+                <div class="videoentrevista">
+                    <iframe width="400" height="215" src="https://www.youtube.com/embed/5wVfgSN6WZY"
+                        title="YouTube video player" frameborder="0" id="videoentrevista1"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                    <p class="minititulo"><b>Filme:</b> Spiderman no way</p>
+                    <p class="blast"><b>Nota média:</b> Jon Watts</p>
+                    <p class="last"><b>Roteiro:</b> Erik Sommers, Chris McKenna <b>Estreia:</b> 2021</p>
+                </div>
+            </div>
+            <div class="entrevista">
+                <div class="videoentrevista">
+                    <iframe width="400" height="215" src="https://www.youtube.com/embed/hZhgT7d6-DA"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                    <p class="minititulo"><b>Filme:</b> SCREAM</p>
+                    <p class="blast"><b>Nota média:</b> Wes Craven </p>
+                    <p class="last"><b>Roteiro:</b> Kevin Williamson <b>Estreia:</b> 1997</p>
+                </div>
+            </div>
+            <div class="entrevista">
+                <div class="videoentrevista">
+                    <iframe width="400" height="215" src="https://www.youtube.com/embed/0HEvyxNJRks"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                    <p class="minititulo"><b>Filme:</b> Aquaman</p>
+                    <p class="blast"><b>Nota média:</b> James Wan</p>
+                    <p class="last"><b>Roteiro:</b> Will Beall, Kurt Johnstad <b>Estreia:</b> 2018</p>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <div class="rodape">
+                <p>Copyright 2022 - Disciplina de Desenvolvimento de Interfaces Web - <b>IEC PUC Minas</p>
+                <img src="/imagens/Logo.png" alt="Logo">
+            </div>
+        </footer>
+    </content>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+    <script src="metodos.js">
+    </script>
+
+    <script>
+
+        let contador=0;
+
+        function mostrarmais(){
+            if (contador==0){
+                document.getElementById('cartaz6').style.display='inline'
+                document.getElementById('cartaz7').style.display='inline'
+                document.getElementById('cartaz8').style.display='inline'
+                document.getElementById('cartaz5').style.display='inline'
+                contador++;
+            }
+            else {
+                document.getElementById('cartaz9').style.display='inline'
+                document.getElementById('cartaz10').style.display='inline'
+                document.getElementById('cartaz11').style.display='inline'
+                document.getElementById('cartaz12').style.display='inline'
+                document.getElementById('fiquenadireita').style.display='none'
+            }
+            
+        }
+    </script>
+
+</body>
+
+
+
+</html>

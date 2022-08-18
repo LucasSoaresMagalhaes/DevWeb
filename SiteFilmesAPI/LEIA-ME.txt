@@ -1,0 +1,4 @@
+melhorias para serem feitas
+    Deixar automatizada a página inicial
+    Busca apertando enter
+    Adicionar mais informações sobre os filmees na pesquisa

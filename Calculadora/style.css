@@ -1,0 +1,38 @@
+body{background-color: rgb(10, 10, 10);}
+
+h1,h2{
+    color: white;
+    text-align: center;
+}
+
+#tela{
+    font-size: 50px;
+    text-align: center;
+}
+
+.calculadora{
+    background-color: rgb(15, 15, 15);
+    width: 500px;
+    margin: 5% auto;
+    border-radius: 15px;
+
+}
+
+.conter{
+    margin: 2%;
+}
+
+.numeros{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+button{
+    width: 75px;
+    height: 75px;   
+}
+
+.display input{
+    height: 100px;
+}

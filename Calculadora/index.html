@@ -1,0 +1,117 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Calculadora</title>
+</head>
+
+<body>
+    <h1>CALCULADORA</h1>
+    <h2>Lucas Soares Magalhães</h2>
+    <div class="calculadora">
+
+        <div class="botoes">
+            <div class="display">
+
+                <input id="tela" class="form-control" type="text" placeholder="Hora de contar" aria-label=" example"
+                    value="" disabled>
+            </div>
+            <div class="numeros">
+                <div class="row">
+                    <div class="conter">
+                        <button type="button" onclick="preencher(9)">9</button>
+                        <button type="button" onclick="preencher(8)">8</button>
+                        <button type="button" onclick="preencher(7)">7</button>
+                        <button type="button" onclick="armazenar(3)">/</button>
+
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="conter">
+                        <button type="button" onclick="preencher(6)">6</button>
+                        <button type="button" onclick="preencher(5)">5</button>
+                        <button type="button" onclick="preencher(4)">4</button>
+                        <button type="button" onclick="armazenar(2)">*</button>
+
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="conter">
+                        <button type="button" onclick="preencher(3)">3</button>
+                        <button type="button" onclick="preencher(2)">2</button>
+                        <button type="button" onclick="preencher(1)">1</button>
+                        <button type="button" onclick="armazenar(4)">-</button>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="conter">
+                        <button type="button" onclick="preencher(999)">C</button>
+                        <button type="button" onclick="preencher(0)">0</button>
+                        <button type="button" onclick="resultar()">=</button>
+                        <button type="button" onclick="armazenar(1)">+</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <script src="calculo.js"></script>
+    <script>
+        let conta
+        let texto
+        let valor1
+        let valor2
+        let primeiro = false
+        function armazenar(valor) {
+            conta = valor;
+            valor1 = parseFloat(document.getElementById("tela").value);
+            document.getElementById("tela").value = ""
+            switch (valor) {
+                case 1:
+                    document.getElementById("tela").placeholder = valor1 + " Mais"
+                    break;
+                case 2:
+                    document.getElementById("tela").placeholder = valor1 + " Multiplicado por"
+                    break;
+
+                case 3:
+                    document.getElementById("tela").placeholder = valor1 + " Dividido por"
+                    break;
+                case 4:
+                    document.getElementById("tela").placeholder = valor1 + " Menos"
+                    break;
+
+                default:
+                    break;
+            }
+
+            primeiro = true;
+        }
+
+        function resultar() {
+            if (primeiro) {
+                valor2 = parseFloat(document.getElementById("tela").value);
+                let final = resultado(conta, valor1, valor2);
+                document.getElementById("tela").value = final;
+                primeiro = false;
+            }
+        }
+
+        function preencher(y) {
+            if (y == 999) {
+                primeiro = false;
+            }
+            preenchimento(y);
+        }
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

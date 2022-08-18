@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/6975c4d52f.js" crossorigin="anonymous"></script>
+    <link id="cor" rel="stylesheet" href="style.css">
+    <script src="adicionados.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+        <link rel="shortcut icon" href="/img/logo_puc-minas_eDPHd9.png">
+    <title>APPUC - Contatos</title>
+</head>
+
+<body>
+    <div class="background">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+    <nav>
+        <div class="row">
+            <div class="col-lg-4 col-12">
+                <p class="nome">Olá, <span id="nome"></span></p>
+            </div>
+            <div class="col-lg-4 col-12">
+                <p class="titulo">APPUC</p>
+            </div>
+            <div class="menumobile">
+                <nav class="navbar navbar-dark sticky-top navbar-expand-lg bg-light">
+                    <div class="container-fluid">
+
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                                <li class="nav-item">
+                                    <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="noticias.html">Novidades</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="institucional.html">Institucional</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="redePuc.html">Rede PUC</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="perfil.html">Meu perfil</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+            <div class="imagemperfil col-lg-4 col-12">
+                <a href="perfil.html"><img id="fotita" src="/img/Portrait_Placeholder.png"></a>
+                <a href="login.html" onclick="logout()">
+                    <p>Sair</p>
+                </a></a>
+                <a href="perfil.html">
+                    <p>Meu perfil</p>
+                </a>
+            </div>
+        </div>
+        <div id="menu" class="row">
+            <div class="col-lg-3">
+                <a class="itemMenu" href="index.html">
+                    Home
+                </a>
+            </div>
+            <div class="col-lg-3">
+                <a class="itemMenu" href="noticias.html">
+                    Novidades
+                </a>
+            </div>
+            <div class="col-lg-3">
+                <a class="itemMenu" href="institucional.html">
+                    Institucional
+                </a>
+            </div>
+            <div class="col-lg-3">
+                <a class="itemMenu" href="redePuc.html">
+                    Rede PUC
+                </a>
+            </div>
+        </div>
+    </nav>
+    <geral>
+        <div class="geral">
+            <div id="eventos" class="cards eventos">
+                <div class="cards" id="cardsuarios">
+                    <h2>Usuários: </h2>
+                    <table class="table table-hover">
+                        <thead>
+                            <tr>
+                                <th scope="col">Imagem:</th>
+                                <th scope="col">Nome:</th>
+                                <th scope="col">Cidade:</th>
+                                <th scope="col">Curso:</th>
+
+                                <div id="seletor" class="form-group row">
+                                    <div class="col-sm-12">
+                                        <select name="filtro_cidade" id="filtro_cidade" onchange="ListaContatos()"
+                                            class="form-control">
+                                            <option value="">Selecione a Cidade</option>
+                                            <option value="Betim">Betim</option>
+                                            <option value="Belo Horizonte">Belo Horizonte</option>
+                                            <option value="Ribeirão das Neves">Ribeirão das Neves</option>
+                                            <option value="Santa Luzia">Santa Luzia</option>
+                                            <option value="Contagem">Contagem</option>
+                                        </select>
+                                    </div>
+
+                                    <div id="seletor" class="col-sm-12">
+                                        <select name="filtro_categoria" id="filtro_categoria" onchange="ListaContatos()"
+                                            class="form-control">
+                                            <option value="">Selecione a Categoria</option>
+                                            <option value="Engenharia Civil">Engenharia Civil</option>
+                                            <option value="Análise e desenvolvimento de sistemas">Análise e
+                                                desenvolvimento de sistemas</option>
+                                            <option value="Engenharia elétrica">Engenharia elétrica</option>
+                                            <option value="Direito">Direito</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                </form>
+                            </tr>
+                        </thead>
+                        <tbody id="table-contatos">
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </geral>
+    <footer>
+        <div class="row">
+            <div class="col-lg-3">
+                <span class="titulo">APPUC</span>
+            </div>
+            <div class="conterfooter">
+                <div id="footerbotao" class="col-lg-3 col-4">
+
+                    <!-- Button trigger modal -->
+                    <span type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#sobre">
+                        Sobre nós
+                    </span>
+                    <!-- Modal -->
+                    <div class="modal fade" id="sobre" tabindex="-1" aria-labelledby="sobreLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="sobreLabel">Sobre nós:</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    Nós somos um grupo do trabalho integrado deste semestre e este é o primeiro
+                                    protótipo da
+                                    nossa
+                                    aplicação, APPUC, buscaremos sempre melhorar e estamos abertos para sugestões.
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary"
+                                        data-bs-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-4" id="footerbotao">
+
+                    <!-- Button trigger modal -->
+                    <span type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#contato">
+                        Contato
+                    </span>
+                    <!-- Modal -->
+                    <div class="modal fade" id="contato" tabindex="-1" aria-labelledby="contatoLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="contatoLabel">Contato:</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    Você pode entrar em contato conosco através do seguinte número de telefone:
+                                    31-99999999
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary"
+                                        data-bs-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col-lg-3 col-4" id="footerbotao">
+                    <a class="btn btn-primary" href="redePuc.html#coments" role="button">Fale conosco</a>
+                </div>
+            </div>
+            <span class="copyright">Todos os direitos reservados.©</span>
+        </div>
+    </footer>
+
+    <script>
+        var prods = '<tr> <td>';
+        for (i = 0; i < db.dados.length; i++) {
+            prods += `<img class = "usuariofoto" src="${db.dados[i].img}"></td><td>${db.dados[i].nome}</td><td>${db.dados[i].cidade} </td> <td> ${db.dados[i].curso} </td>`;
+            if (i == db.dados.length - 1) {
+                prods += ''
+            }
+            else {
+                prods += '</tr> <td>'
+            }
+
+        }
+        document.getElementById('listacontatos').innerHTML = prods;
+    </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    <script src="registrados.js"></script>
+    <script>
+        // função para listar na tabela os contatos que estão associados aos filtros 
+
+        function ListaContatos() {
+
+            // Obtem os dados informados pelo usuário nos filtros
+            let fc = document.getElementById('filtro_cidade').value;
+            let fcg = document.getElementById('filtro_categoria').value;
+
+            // limpa a lista de contatos apresentados
+            $("#table-contatos").empty();
+
+            // Popula a tabela com os registros do banco de dados
+            for (let index = 0; index < db.data.length; index++) {
+                const contato = db.data[index];
+
+                // Verifica se os dados do contato batem com os filtros
+                if (((contato.cidade == fc) || (fc == '')) &&
+                    ((contato.categoria == fcg) || (fcg == ''))) {
+
+                    // Inclui o contato na tabela    
+                    $("#table-contatos").append(`<tr><td scope="row"><img class = "usuariofoto" src=${contato.id} alt=""></td>
+                                                    <td>${contato.nome}</td>
+                                                    <td>${contato.cidade}</td>
+                                                    <td>${contato.categoria}</td>
+                                                </tr>`);
+                }
+            }
+
+        }
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+        crossorigin="anonymous"></script>
+
+
+
+</body>
+
+</html>

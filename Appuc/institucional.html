@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/6975c4d52f.js" crossorigin="anonymous"></script>
+    <link id="cor" rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="my-slider.css" />
+    <script src="javascript-slider.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+        <link rel="shortcut icon" href="/img/logo_puc-minas_eDPHd9.png">
+    <title>APPUC - Institucional</title>
+</head>
+
+<body>
+    <div class="background">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+    <nav>
+        <div class="row">
+            <div class="col-lg-4 col-12">
+                <p class="nome">Olá, <span id="nome"></span></p>
+            </div>
+            <div class="col-lg-4 col-12">
+                <p class="titulo">APPUC</p>
+            </div>
+            <div class="menumobile">
+                <nav class="navbar navbar-dark sticky-top navbar-expand-lg bg-light">
+                    <div class="container-fluid">
+
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                                <li class="nav-item">
+                                    <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="noticias.html">Novidades</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link active" href="institucional.html">Institucional</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="redePuc.html">Rede PUC</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="perfil.html">Meu perfil</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+            <div class="imagemperfil col-lg-4 col-12">
+                <a href="perfil.html"><img id="fotita" src="/img/Portrait_Placeholder.png"></a>
+                <a href="login.html" onclick="logout()">
+                    <p>Sair</p>
+                </a></a>
+                <a href="perfil.html">
+                    <p>Meu perfil</p>
+                </a>
+            </div>
+        </div>
+        <div id="menu" class="row">
+            <div class="col-lg-3">
+                <a class="itemMenu" href="index.html">
+                    Home
+                </a>
+            </div>
+            <div class="col-lg-3">
+                <a class="itemMenu" href="noticias.html">
+                    Novidades
+                </a>
+            </div>
+            <div class="col-lg-3">
+                <a  id="ACTIVE" class="itemMenu" href="institucional.html">
+                    Institucional
+                </a>
+            </div>
+            <div class="col-lg-3">
+                <a class="itemMenu" href="redePuc.html">
+                    Rede PUC
+                </a>
+            </div>
+        </div>
+    </nav>
+    <geral>
+        <div class="geral">
+
+            <div id="ACESSO" class="canvas">
+                <div class="cards">
+                    <p id="titulocards">Acessar Canvas</p>
+                    <input id="myInput" class="form-control" type="password" value="1234"
+                        aria-label="----------" disabled readonly>
+                    <input type="checkbox" onclick="mostrar()">Mostrar senha
+                    <span type="button" onclick="editarsenha()" class="btn btn-primary">
+                        salvar
+                    </span>
+                </div>
+                <div class="cards" id="cadastros">
+                    <p id="titulocards">Banco de notas</p>
+                    <a href="cadastroPROF.html" class="myButton">Média geral dos alunos</a>
+
+                    </span>
+                </div>
+                <div class="cards">
+                    <p id="titulocards">Reclamações</p>
+                    <div class="geral">
+
+                        <div class="reclamacoes">
+                            <div class="cards">
+                                <div class="reclamacao">
+            
+                                    <div class="input-group mb-3">
+                                        <input type="text" class="form-control" id="aqui" placeholder="e-mail PUC"
+                                            aria-label="e-mail PUC" aria-describedby="basic-addon2">
+                                        <span class="input-group-text" id="basic-addon2">@sga.pucminas.com</span>
+                                    </div>
+            
+                                    <div class="input-group">
+                                        <span class="input-group-text">Problema:</span>
+                                        <textarea class="form-control" id="add" aria-label="Comentário:"
+                                            placeholder="Descreva onde e o que está acontecendo..."></textarea>
+                                    </div>
+                                    <button id="enviar" type="button" id="enviar" onclick="Adicionar()"
+                                        class="btn btn-primary btn-sm">Enviar</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cards" id="problemas">
+                            <p id="titulocards">Problemas reportados:</p>
+                            <table class="table table-hover">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">E-mail:</th>
+                                        <th scope="col">Problema:</th>
+                                        <th scope="col">Data:</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="table-contatos">
+            
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            
+        </div>
+    </geral>
+    <footer>
+        <div class="row">
+            <div class="col-lg-3">
+                <span class="titulo">APPUC</span>
+            </div>
+            <div class="conterfooter">
+                <div id="footerbotao" class="col-lg-3 col-4">
+
+                    <!-- Button trigger modal -->
+                    <span type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#sobre">
+                        Sobre nós
+                    </span>
+                    <!-- Modal -->
+                    <div class="modal fade" id="sobre" tabindex="-1" aria-labelledby="sobreLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="sobreLabel">Sobre nós:</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    Nós somos um grupo do trabalho integrado deste semestre e este é o primeiro
+                                    protótipo da
+                                    nossa
+                                    aplicação, APPUC, buscaremos sempre melhorar e estamos abertos para sugestões.
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary"
+                                        data-bs-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-4" id="footerbotao">
+
+                    <!-- Button trigger modal -->
+                    <span type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#contato">
+                        Contato
+                    </span>
+                    <!-- Modal -->
+                    <div class="modal fade" id="contato" tabindex="-1" aria-labelledby="contatoLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="contatoLabel">Contato:</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    Você pode entrar em contato conosco através do seguinte número de telefone:
+                                    31-99999999
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary"
+                                        data-bs-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col-lg-3 col-4" id="footerbotao">
+                    <a class="btn btn-primary" href="redePuc.html#coments" role="button">Fale conosco</a>
+                </div>
+            </div>
+            <span class="copyright">Todos os direitos reservados.©</span>
+        </div>
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    <script src="registrados.js"></script>
+    <script src="reclama.js"></script>
+
+    <script>
+        let verificado;
+        let i = 0;
+        const nome = document.getElementById('nome').innerHTML;
+        for (i = 0; i < db.data.length; i++) {
+            verificando = db.data[i];
+            if (nome == verificando.nome) {
+                verificado = verificando;
+            }
+        }
+
+        if(verificado.admin == "1"){
+            document.getElementById('problemas').style.display="block";
+
+            console.log("É ADMIN")
+
+        }
+        else{
+        document.getElementById('problemas').style.display="none";
+
+        console.log("N É ADMIN")}
+
+
+
+    </script>
+
+    <script>
+        function Adicionar() {
+
+            date = new Date();
+            year = date.getFullYear();
+            month = date.getMonth() + 1;
+            day = date.getDate();
+
+            console.log(month + "/" + day + "/" + year)
+
+            let comentario = {
+                nome: $("#aqui").val()+"@sga.pucminas.com",
+                coment: $("#add").val(),
+                data: day + "/" + month + "/" + year
+            }
+
+            console.log(comentario)
+
+            NOVOreclamacao(comentario)
+            window.location.reload();
+
+        }
+
+        var prods = '<tr> <td scope="row">';
+            for (let i = 0; i < db_reclamacao.reclamacao.length ; i++) {
+                prods += '<tr> <td scope="row">';
+            prods += `${db_reclamacao.reclamacao[i].nome}</td><td>${db_reclamacao.reclamacao[i].coment}</td><td>${db_reclamacao.reclamacao[i].data} </td>`;
+            if (i == db_reclamacao.reclamacao.length - 1) {
+                prods += ''
+            }
+            else {
+                prods += '</tr> </td>'
+            }
+
+        }
+    
+        document.getElementById('table-contatos').innerHTML = prods;
+
+    </script>
+
+<script>
+    for (let i = 0; i < db.data.length; i++) {
+        if (db.data[i].logado == "1") {
+            document.getElementById('myInput').value = db.data[i].senhacanvas
+        }
+    }
+</script>
+
+<script>
+    function mostrar() {
+        var x = document.getElementById("myInput");
+        if (x.type === "password") {
+            x.type = "text";
+            x.removeAttribute("readonly");
+            x.removeAttribute("disabled");
+        } else {
+            x.type = "password";
+        }
+
+
+    }
+    function editarsenha() {
+            let verificado;
+            let i = 0;
+            const nome = document.getElementById('nome').innerHTML;
+            for (i = 0; i < db.data.length; i++) {
+                verificando = db.data[i];
+                if (nome == verificando.nome) {
+                    verificado = verificando;
+                }
+            }
+
+            let senhoritacanvas = $("#myInput").val();
+
+            let contato = {
+                cidade: verificado.cidade,
+                id: verificado.id,
+                nome: verificado.nome,
+                numero_pessoal: verificado.numero_pessoal,
+                dataNasc: verificado.dataNasc,
+                email: verificado.email,
+                bio: verificado.bio,
+                categoria: verificado.categoria,
+                nota: verificado.nota,
+                telefone: verificado.telefone,
+                senha: verificado.senha,
+                logado: verificado.logado,
+                cor: verificado.cor,
+                carteirinha: verificado.carteirinha,
+                senhacanvas: senhoritacanvas
+
+            };
+
+            updateContato(verificado.nome, contato);
+
+        }
+</script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous"></script>
+
+
+</body>
+
+</html>

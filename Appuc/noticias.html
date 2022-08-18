@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/6975c4d52f.js" crossorigin="anonymous"></script>
+    <link id="cor" rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="my-slider.css" />
+    <script src="javascript-slider.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+        <link rel="shortcut icon" href="/img/logo_puc-minas_eDPHd9.png">
+    <title>APPUC - Noticias</title>
+</head>
+
+<body>
+    <div class="background">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+    <nav>
+        <div class="row">
+            <div class="col-lg-4 col-12">
+                <p class="nome">Olá, <span id="nome"></span></p>
+            </div>
+            <div class="col-lg-4 col-12">
+                <p class="titulo">APPUC</p>
+            </div>
+            <div class="menumobile">
+                <nav class="navbar navbar-dark sticky-top navbar-expand-lg bg-light">
+                    <div class="container-fluid">
+
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                                <li class="nav-item">
+                                    <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link active" href="noticias.html">Novidades</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="institucional.html">Institucional</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="redePuc.html">Rede PUC</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="perfil.html">Meu perfil</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+            <div class="imagemperfil col-lg-4 col-12">
+                <a href="perfil.html"><img id="fotita" src="/img/Portrait_Placeholder.png"></a>
+                <a href="login.html" onclick="logout()">
+                    <p>Sair</p>
+                </a></a>
+                <a href="perfil.html">
+                    <p>Meu perfil</p>
+                </a>
+            </div>
+        </div>
+        <div id="menu" class="row">
+            <div class="col-lg-3">
+                <a class="itemMenu" href="index.html">
+                    Home
+                </a>
+            </div>
+            <div class="col-lg-3">
+                <a id="ACTIVE" class="itemMenu" href="noticias.html">
+                    Novidades
+                </a>
+            </div>
+            <div class="col-lg-3">
+                <a class="itemMenu" href="institucional.html">
+                    Institucional
+                </a>
+            </div>
+            <div class="col-lg-3">
+                <a class="itemMenu" href="redePuc.html">
+                    Rede PUC
+                </a>
+            </div>
+        </div>
+    </nav>
+    <geral>
+        <div class="geral">
+            <h1>NOTÍCIAS PUC:</h1>
+            <div id="noticias" class="carousel slide" data-bs-ride="false">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#noticias" data-bs-slide-to="0" class="active"
+                        aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#noticias" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#noticias" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="/img/cacaushow_noticia.jpg" class="d-block w-100" alt="/img/cacaushow_noticia.jpg">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Cacau show no campus</h5>
+                            <p>A nova Cacau Show já está disponível no campus desde 06/05/2022.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="/img/medicina_noticia.jpg" class="d-block w-100" alt="/img/medicina_noticia.jpg">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Vagas de medicina abertas</h5>
+                            <p>Vagas para o curso de medicina na PUC Minas estão abertas</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="/img/serra_noticia.jpeg" class="d-block w-100" alt="/img/serra_noticia.jpeg">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>UFMG e PUC Minas em defesa da Serra do Curral</h5>
+                            <p>As universidades estão tomando ações legais para defender a Serra do Curral</p>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#noticias" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#noticias" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+            <div class="containernoticia">
+                <div id="noticiacard" class="cards">
+                    <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#noticia1"
+                        aria-expanded="false" aria-controls="noticia1">
+                        <b>Cacau show no campus</b>
+                    </button>
+                    <p id="data">20/20/2022</p>
+                    <img class="Imagem-preview" src="/img/cacaushow_noticia.jpg">
+                    </p>
+                    <div class="collapse" id="noticia1">
+                        <div class="card card-body">
+                            <h2>
+                                A nova Cacau Show já está disponível no campus desde 06/05/2022
+                            </h2>
+                            <div class="conteudo-noticia">
+                                <img id="imagem-noticia" src="/img/cacaushow_noticia.jpg">
+                                <span>Uma nova unidade da chocolataria Cacau Show está agora aberta na unidade São
+                                    Gabriel da PUC Minas, um dia após o dia das mães. Bom chocolate para todos.</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="noticiacard" class="cards">
+                    <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#noticia2"
+                        aria-expanded="false" aria-controls="noticia2">
+                        <b>Abertas inscrições para medicina PUC Minas</b>
+                    </button>
+                    <p id="data">20/20/2022</p>
+                    <img class="Imagem-preview" src="/img/medicina_noticia.jpg">
+                    </p>
+                    <div class="collapse" id="noticia2">
+                        <div class="card card-body">
+                            <h2>
+                                Abertas inscrições para Vestibular 2022/2 de medicina PUC Minas
+                            </h2>
+                            <div class="conteudo-noticia">
+                                <img id="imagem-noticia" src="/img/medicina_noticia.jpg">
+                                <span>A Pontifícia Universidade Católica de Minas Gerais (PUC Minas) já recebe
+                                    inscrições para o Vestibular 2022/2 de Medicina. Os interessados podem se cadastrar
+                                    até o dia 9 de junho. O valor da taxa é de R$ 260.
+
+                                    Inscreva-se Vestibular 2022/2 Medicina PUC Minas
+
+                                    Participantes do Enem podem aproveitar as notas em vez de fazer novas provas. Para
+                                    essa modalidade de ingresso o prazo de inscrições encerra no dia 15 de junho e a
+                                    taxa custa R$ 65.
+
+                                    O resultado da seleção por meio das notas do Enem será informado nos dias 6 e 7 de
+                                    julho. São 30 vagas para o campus Betim e 18 vagas para Poços de Caldas.</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="noticiacard" class="cards">
+                    <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#noticia3"
+                        aria-expanded="false" aria-controls="noticia3">
+                        <b>UFMG e PUC Minas em defesa da Serra do Curral</b>
+                    </button>
+                    <p id="data">20/20/2022</p>
+                    <img class="Imagem-preview" src="/img/serra_noticia.jpeg">
+                    </p>
+                    <div class="collapse" id="noticia3">
+                        <div class="card card-body">
+                            <h2>
+                                Instituições alertam para os nocivos efeitos socioambientais do projeto de exploração
+                                minerária
+                            </h2>
+                            <div class="conteudo-noticia">
+                                <img id="imagem-noticia" src="/img/serra_noticia.jpeg">
+                                <span>Reitores da UFMG, da PUC Minas e o bispo auxiliar da Arquidiocese de Belo
+                                    Horizonte, dom Joaquim Giovani Mol Guimarães, assinaram um manifesto conjunto em
+                                    defesa da Serra do Curral, em BH, nesta terça-feira (17/5). Eles se colocam contra a
+                                    projeto da Tamisa, que pretende explorar minério e vai devastar uma grande área da
+                                    serra. A liberação do projeto feita pelo Conselho de Política Ambiental (Copam) está
+                                    sendo questinada na justiça. O governo de Romeu Zema defende a mineração. Além das
+                                    universidades e da Arquidiocese de BH, já se manifestaram contra a mineração na
+                                    serra ambientalistas, artistas, parlamentares federais e estaduais e a própria
+                                    Prefeitura de Belo Horizonte. </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="noticiacard" class="cards">
+                    <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#noticia4"
+                        aria-expanded="false" aria-controls="noticia4">
+                        <b>Coleta de lixo eletrônico na PUC Minas</b>
+                    </button>
+                    <p id="data">20/20/2022</p>
+                    <img class="Imagem-preview" src="/img/reciclagem_noticia.jpg">
+                    </p>
+                    <div class="collapse" id="noticia4">
+                        <div class="card card-body">
+                            <h2>
+                                Novos pontos de coleta de lixo eletrônicos começam a funcionar em Poços de Caldas, MG.
+                            </h2>
+                            <div class="conteudo-noticia">
+                                <img id="imagem-noticia" src="/img/reciclagem_noticia.jpg">
+                                <span>
+
+                                    Poços de Caldas tem novos sete pontos de coleta de lixo eletrônico espalhados na
+                                    cidade. A instalação foi feita por meio de uma iniciativa da PUC Minas em parceria
+                                    com uma empresa de gerenciamento de resíduos sólidos. Toda verba arrecadada com a
+                                    destinação dos materiais arrecadados será destinada ao Grupo de Apoio e Assistência
+                                    ao Paciente Oncológico (Gaapo).
+
+                                    Equipamentos que estão sem utilização como placas de computadores, equipamentos
+                                    antigos como videocassetes, computadores, toca fitas, DVDs, pilhas, entre outros,
+                                    são considerados lixo eletrônicos e podem ser destinados nos pontos de coleta por
+                                    estudantes e toda comunidade.
+
+                                    “Lixo eletrônico nós costumamos dizer que é tudo aquilo que se liga na tomada, que é
+                                    movido à bateria. Ele é 100% reciclável. Ele tem plástico, alumínio, as placas são
+                                    ricas em metais preciosos como ouro, paládio, cádmium, bronze. Nós somos uma empresa
+                                    que fazemos toda essa separação e destinamos para os locais corretos para fazer a
+                                    separação e reciclagem dos materiais”, explicou Luiz Gustavo Martins Tassi, que é
+                                    diretor da empresa de resíduos.
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </geral>
+    <footer>
+        <div class="row">
+            <div class="col-lg-3">
+                <span class="titulo">APPUC</span>
+            </div>
+            <div class="conterfooter">
+                <div id="footerbotao" class="col-lg-3 col-4">
+
+                    <!-- Button trigger modal -->
+                    <span type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#sobre">
+                        Sobre nós
+                    </span>
+                    <!-- Modal -->
+                    <div class="modal fade" id="sobre" tabindex="-1" aria-labelledby="sobreLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="sobreLabel">Sobre nós:</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    Nós somos um grupo do trabalho integrado deste semestre e este é o primeiro
+                                    protótipo da
+                                    nossa
+                                    aplicação, APPUC, buscaremos sempre melhorar e estamos abertos para sugestões.
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary"
+                                        data-bs-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-4" id="footerbotao">
+
+                    <!-- Button trigger modal -->
+                    <span type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#contato">
+                        Contato
+                    </span>
+                    <!-- Modal -->
+                    <div class="modal fade" id="contato" tabindex="-1" aria-labelledby="contatoLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="contatoLabel">Contato:</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    Você pode entrar em contato conosco através do seguinte número de telefone:
+                                    31-99999999
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary"
+                                        data-bs-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col-lg-3 col-4" id="footerbotao">
+                    <a class="btn btn-primary" href="redePuc.html#coments" role="button">Fale conosco</a>
+                </div>
+            </div>
+            <span class="copyright">Todos os direitos reservados.©</span>
+        </div>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    <script src="registrados.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>

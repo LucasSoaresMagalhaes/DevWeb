@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/6975c4d52f.js" crossorigin="anonymous"></script>
+    <link id="cor" rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="my-slider.css" />
+    <script src="javascript-slider.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="shortcut icon" href="/img/logo_puc-minas_eDPHd9.png">
+    <title>APPUC - Perfil</title>
+</head>
+
+<body>
+    <div class="background">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+    <nav>
+        <div class="row">
+            <div class="col-lg-4 col-12">
+                <p class="nome">Olá, <span id="nome"></span></p>
+            </div>
+            <div class="col-lg-4 col-12">
+                <p class="titulo">APPUC</p>
+            </div>
+            <div class="menumobile">
+                <nav class="navbar navbar-dark sticky-top navbar-expand-lg bg-light">
+                    <div class="container-fluid">
+
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                                <li class="nav-item">
+                                    <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="noticias.html">Novidades</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="institucional.html">Institucional</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="redePuc.html">Rede PUC</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link active" href="perfil.html">Meu perfil</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+            <div class="imagemperfil col-lg-4 col-12">
+                <a href="perfil.html"><img id="fotita" src="/img/Portrait_Placeholder.png"></a>
+                <a href="login.html" onclick="logout()">
+                    <p>Sair</p>
+                </a></a>
+                <a href="perfil.html">
+                    <p>Meu perfil</p>
+                </a>
+            </div>
+        </div>
+        <div id="menu" class="row">
+            <div class="col-lg-3">
+                <a class="itemMenu" href="index.html">
+                    Home
+                </a>
+            </div>
+            <div class="col-lg-3">
+                <a class="itemMenu" href="noticias.html">
+                    Novidades
+                </a>
+            </div>
+            <div class="col-lg-3">
+                <a class="itemMenu" href="institucional.html">
+                    Institucional
+                </a>
+            </div>
+            <div class="col-lg-3">
+                <a class="itemMenu" href="redePuc.html">
+                    Rede PUC
+                </a>
+            </div>
+        </div>
+    </nav>
+    <geral>
+        <div class="geral">
+            <h1>Seu perfil:</h1>
+
+            <div class="profilepage">
+                <img id="fotita2" src="/img/Portrait_Placeholder.png">
+                <div class="editimg">
+                    <div id="fotita3" class="fotita2">
+                        <img src="/img/Portrait_Placeholder.png" class="imgalunobusca" id="imgPhoto">
+                    </div>
+                    <div id="upload">
+                        <input type="file" id="flImage" name="fImage" accept="image/*">
+                    </div>
+                </div>
+            </div>
+            <div id="profilepage" class="cards">
+                <h2 id="nombre">Gabriel Oliveira</h2>
+                <ul id="dadosperfil">
+                    <li><b>Data de nascimento:</b><span id="nascimento"> 08/08/1998</span></li>
+                    <input id="editnascimento" class="form-control" type="text" value="" aria-label="">
+                    <li><b>E-mail:</b> <span id="email"> exemplo@exemplo.com</li></span>
+                    <input id="editemail" class="form-control" type="text" value="" aria-label="">
+                    <li><b>Bio:</b> <span id="bio"> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ratione
+                            doloremque
+                            impedit, itaque ea aliquam temporibus facere voluptatum consequuntur? Fuga ab quam quaerat
+                            consequatur sequi nulla! Voluptas aut illum fugit voluptate.</span></li>
+                    <input id="editbio" class="form-control" type="text" value="" aria-label="">
+                    <li><b>Curso:</b><span id="categoria"> Análise e Desenvolvimento de Sistemas</span></li>
+                    <input id="editcategoria" class="form-control" type="text" value="" aria-label="">
+                    <li><b>Cidade: </b><span id="cidade">Belo Horizonte</span></li>
+                    <input id="editcidade" class="form-control" type="text" value="" aria-label="">
+                    <li><b>Número pessoal: </b><span id="npessoal">123456789</span></li>
+                    <input id="editnpessoal" class="form-control" type="text" value="" aria-label="">
+                    <li><b>Telefone: </b><span id="telefone">31-123456789</span></li>
+                    <input id="edittelefone" class="form-control" type="text" value="" aria-label="">
+
+                </ul>
+                <select id="escolha" onchange="mudacor()" class="form-select form-select-sm"
+                    aria-label=".form-select-sm example">
+                    <option selected>Escolha o seu modo preferido</option>
+                    <option value="1">Padrão</option>
+                    <option value="2">Noturno</option>
+                </select>
+                <a class="btn btn-primary" id="users" href="contatos.html" role="button">Usuários</a>
+                <a class="btn btn-primary" id="editardados" onclick="editar()" role="button">Editar dados</a>
+                <a class="btn btn-primary" id="cancelar" onclick="cancela()" role="button">Cancelar</a>
+                <a class="btn btn-primary" id="salvardados" onclick="confirma()" role="button">Salvar</a>
+
+            </div>
+
+
+        </div>
+    </geral>
+    <footer>
+        <div class="row">
+            <div class="col-lg-3">
+                <span class="titulo">APPUC</span>
+            </div>
+            <div class="conterfooter">
+                <div id="footerbotao" class="col-lg-3 col-4">
+
+                    <!-- Button trigger modal -->
+                    <span type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#sobre">
+                        Sobre nós
+                    </span>
+                    <!-- Modal -->
+                    <div class="modal fade" id="sobre" tabindex="-1" aria-labelledby="sobreLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="sobreLabel">Sobre nós:</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    Nós somos um grupo do trabalho integrado deste semestre e este é o primeiro
+                                    protótipo da
+                                    nossa
+                                    aplicação, APPUC, buscaremos sempre melhorar e estamos abertos para sugestões.
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary"
+                                        data-bs-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-4" id="footerbotao">
+
+                    <!-- Button trigger modal -->
+                    <span type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#contato">
+                        Contato
+                    </span>
+                    <!-- Modal -->
+                    <div class="modal fade" id="contato" tabindex="-1" aria-labelledby="contatoLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="contatoLabel">Contato:</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    Você pode entrar em contato conosco através do seguinte número de telefone:
+                                    31-99999999
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary"
+                                        data-bs-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col-lg-3 col-4" id="footerbotao">
+                    <a class="btn btn-primary" href="redePuc.html#coments" role="button">Fale conosco</a>
+                </div>
+            </div>
+            <span class="copyright">Todos os direitos reservados.©</span>
+        </div>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    <script src="registrados.js"></script>
+    <!--SCRIPT PARA MUDAR A COR-->
+    <script>
+
+        function mudacor() {
+            for (let j = 0; j < db.data.length; j++) {
+
+                if (db.data[j].logado == 1) {
+                    console.log("COR ORIGINAL: " + db.data[j].cor)
+                    console.log("COR NOVA: " + document.getElementById('escolha').value)
+
+                    let core = document.getElementById('escolha').value;
+                    let contato = {
+                        cidade: db.data[j].cidade,
+                        id: db.data[j].id,
+                        nome: db.data[j].nome,
+                        numero_pessoal: db.data[j].numero_pessoal,
+                        dataNasc: db.data[j].dataNasc,
+                        email: db.data[j].email,
+                        bio: db.data[j].bio,
+                        categoria: db.data[j].categoria,
+                        nota: db.data[j].nota,
+                        telefone: db.data[j].telefone,
+                        senha: db.data[j].senha,
+                        logado: db.data[j].logado,
+                        cor: core,
+                        carteirinha: db.data[j].carteirinha,
+                        senhacanvas: db.data[j].senhacanvas,
+                        admin: db.data[j].admin
+                    };
+
+                    updateContato(db.data[j].nome, contato);
+                    window.location.reload();
+                }
+            }
+        }
+
+
+    </script>
+    <!--SCRIPT PARA CARREGAR DADOS-->
+
+    <script>
+
+        for (let j = 0; j < db.data.length; j++) {
+
+            if (db.data[j].logado == 1) {
+                document.getElementById('fotita2').setAttribute('src', db.data[j].id)
+                document.getElementById('nascimento').innerHTML = db.data[j].dataNasc
+                document.getElementById('email').innerHTML = db.data[j].email
+                document.getElementById('bio').innerHTML = db.data[j].bio
+                document.getElementById('nombre').innerHTML = db.data[j].nome
+                document.getElementById('categoria').innerHTML = db.data[j].categoria
+                document.getElementById('cidade').innerHTML = db.data[j].cidade
+                document.getElementById('npessoal').innerHTML = db.data[j].numero_pessoal
+                document.getElementById('telefone').innerHTML = db.data[j].telefone
+
+            }
+        }
+
+    </script>
+
+    <script>
+
+
+        let photo = document.getElementById('imgPhoto');
+        let file = document.getElementById('flImage');
+
+        file.addEventListener('change', () => {
+
+            if (file.files.length <= 0) {
+                return;
+            }
+
+            let reader = new FileReader();
+
+            reader.onload = () => {
+                photo.src = reader.result;
+            }
+
+            reader.readAsDataURL(file.files[0]);
+        });
+
+    </script>
+
+    <script>
+
+        function cancela() {
+            document.getElementById('nascimento').style.display = "inline";
+            document.getElementById('email').style.display = "block";
+            document.getElementById('bio').style.display = "block";
+            document.getElementById('categoria').style.display = "block";
+            document.getElementById('editardados').style.display = "inline";
+            document.getElementById('cidade').style.display = "block";
+            document.getElementById('npessoal').style.display = "block";
+            document.getElementById('telefone').style.display = "block";
+            document.getElementById('fotita2').style.display = "block";
+            document.getElementById('users').style.display = "inline";
+            document.getElementById('escolha').style.display = "block";
+
+
+
+
+
+            document.getElementById('editnascimento').style.display = "none";
+            document.getElementById('editemail').style.display = "none";
+            document.getElementById('editbio').style.display = "none";
+            document.getElementById('editcategoria').style.display = "none";
+            document.getElementById('editcidade').style.display = "none";
+            document.getElementById('editnpessoal').style.display = "none";
+            document.getElementById('edittelefone').style.display = "none";
+            document.getElementById('salvardados').style.display = "none";
+            document.getElementById('fotita3').style.display = "none";
+            document.getElementById('upload').style.display = "none";
+            document.getElementById('cancelar').style.display = "none";
+
+        }
+
+        function editar() {
+
+            let verificado;
+            let i = 0;
+            const nome = document.getElementById('nome').innerHTML;
+            for (i = 0; i < db.data.length; i++) {
+                verificando = db.data[i];
+                if (nome == verificando.nome) {
+                    verificado = verificando;
+                }
+            }
+
+
+
+            document.getElementById('nascimento').style.display = "none";
+            document.getElementById('email').style.display = "none";
+            document.getElementById('bio').style.display = "none";
+            document.getElementById('categoria').style.display = "none";
+            document.getElementById('editardados').style.display = "none";
+            document.getElementById('cidade').style.display = "none";
+            document.getElementById('npessoal').style.display = "none";
+            document.getElementById('telefone').style.display = "none";
+            document.getElementById('fotita2').style.display = "none";
+            document.getElementById('escolha').style.display = "none";
+
+
+            document.getElementById('editnascimento').value = verificado.dataNasc;
+            document.getElementById('editemail').value = verificado.email;
+            document.getElementById('editbio').value = verificado.bio;
+            document.getElementById('editcategoria').value = verificado.categoria;
+            document.getElementById('editcidade').value = verificado.cidade;
+            document.getElementById('editnpessoal').value = verificado.numero_pessoal;
+            document.getElementById('edittelefone').value = verificado.telefone;
+
+            document.getElementById('editnascimento').style.display = "block";
+            document.getElementById('editemail').style.display = "block";
+            document.getElementById('editbio').style.display = "block";
+            document.getElementById('editcategoria').style.display = "block";
+            document.getElementById('editcidade').style.display = "block";
+            document.getElementById('editnpessoal').style.display = "block";
+            document.getElementById('edittelefone').style.display = "block";
+            document.getElementById('salvardados').style.display = "inline";
+            document.getElementById('fotita3').style.display = "block";
+            document.getElementById('upload').style.display = "block";
+            document.getElementById('cancelar').style.display = "inline";
+
+
+        }
+
+        function confirma() {
+            console.log("CHEGOU AQUI")
+
+            let verificado;
+            let i = 0;
+            const nome = document.getElementById('nome').innerHTML;
+            for (i = 0; i < db.data.length; i++) {
+                verificando = db.data[i];
+                if (nome == verificando.nome) {
+                    verificado = verificando;
+                }
+            }
+
+
+
+            let campoId = document.getElementById('imgPhoto').src;
+            let campoEmail = $("#editemail").val();
+            let Campocidade = $("#editcidade").val();
+            let camponpessoal = $("#editnpessoal").val();
+            let campoCategoria = $("#editcategoria").val();
+            let campoTelefone = $("#edittelefone").val();
+            let campoBio = $("#editbio").val();
+            let campoNasc = $("#editnascimento").val();
+            let core = document.getElementById('escolha').value;
+
+            let contato = {
+                cidade: Campocidade,
+                id: campoId,
+                nome: verificado.nome,
+                numero_pessoal: camponpessoal,
+                dataNasc: campoNasc,
+                email: campoEmail,
+                bio: campoBio,
+                categoria: campoCategoria,
+                nota: verificado.nota,
+                telefone: campoTelefone,
+                senha: verificado.senha,
+                logado: verificado.logado,
+                cor: core,
+                carteirinha: verificado.carteirinha,
+                senhacanvas: verificado.senhacanvas,
+                admin: verificado.admin
+
+            };
+
+            document.getElementById('nascimento').style.display = "inline";
+            document.getElementById('email').style.display = "inline";
+            document.getElementById('bio').style.display = "inline";
+            document.getElementById('categoria').style.display = "inline";
+            document.getElementById('editardados').style.display = "inline";
+            document.getElementById('cidade').style.display = "inline";
+            document.getElementById('npessoal').style.display = "inline";
+            document.getElementById('telefone').style.display = "inline";
+            document.getElementById('fotita2').style.display = "block";
+            document.getElementById('escolha').style.display = "inline";
+
+
+            document.getElementById('editnascimento').style.display = "none";
+            document.getElementById('editemail').style.display = "none";
+            document.getElementById('editbio').style.display = "none";
+            document.getElementById('editcategoria').style.display = "none";
+            document.getElementById('editcidade').style.display = "none";
+            document.getElementById('editnpessoal').style.display = "none";
+            document.getElementById('edittelefone').style.display = "none";
+            document.getElementById('salvardados').style.display = "none";
+            document.getElementById('fotita3').style.display = "none";
+            document.getElementById('upload').style.display = "none";
+
+
+            updateContato(verificado.nome, contato);
+            window.location.reload();
+        }
+
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
